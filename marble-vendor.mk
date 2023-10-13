@@ -3145,6 +3145,8 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     dpmserviceapp \
     qcrilmsgtunnel \
+    DaxUI \
+    daxService \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
