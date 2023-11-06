@@ -16,6 +16,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/system/etc/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.Performance.xml \
     vendor/xiaomi/marble/proprietary/system/etc/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.UxPerformance.xml \
     vendor/xiaomi/marble/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/marble/proprietary/vendor/bin/hw/mfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mfp-daemon \
     vendor/xiaomi/marble/proprietary/system/lib/libdolbyottcontrol.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdolbyottcontrol.so \
     vendor/xiaomi/marble/proprietary/system/lib/libdovi_omx.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdovi_omx.so \
     vendor/xiaomi/marble/proprietary/system/lib64/libdolbyottcontrol.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdolbyottcontrol.so \
@@ -584,6 +585,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
@@ -1879,6 +1881,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.libmwqemiptablemgr.so \
     vendor/xiaomi/marble/proprietary/vendor/lib/vendor.nxp.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.nxp.hardware.nfc@2.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hw.touchfeature@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/marble/proprietary/vendor/lib/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.2.so \
     vendor/xiaomi/marble/proprietary/vendor/lib/vendor.qti.data.factory@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.3.so \
@@ -2181,6 +2184,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camx.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camx.provider@2.5-legacy.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camx.provider@2.6-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camx.provider@2.6-legacy.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camx.provider@2.7-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camx.provider@2.7-legacy.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/com.fingerprints.extension@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@3.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
@@ -2255,8 +2259,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/consumerir.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.qcom.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/displayfeature.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/displayfeature.default.so \
-    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
-    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/gyro_fusion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gyro_fusion_interface.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/sound_trigger.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.taro.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
@@ -3070,6 +3074,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
