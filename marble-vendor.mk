@@ -128,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/vendor.qti.sla.service@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.sla.service@1.0-service \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service \
+    vendor/xiaomi/marble/proprietary/vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service \
     vendor/xiaomi/marble/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
@@ -581,6 +582,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEAN_BLUR.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MORPH_ERODE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MORPH_ERODE.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_POINT.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SIMPLE_FACIALSMOOTH_Define_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SIMPLE_FACIALSMOOTH_Define_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SKIN_ENHANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SKIN_ENHANCE.bin \
@@ -2266,6 +2268,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/jcos_nq_client-v1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/jcos_nq_client-v1.so \
@@ -3099,6 +3102,7 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    vendor.xiaomi.hw.touchfeature@1.0-service \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.factory-V2.0-java \
@@ -3137,5 +3141,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@2.0-service \
     vendor.xiaomi.hardware.displayfeature@1.0-service \
     vendor.xiaomi.hardware.quickcamera@1.0-service \
+    vendor.xiaomi.hw.touchfeature@1.0-service \
     vendor.xiaomi.sensor.citsensorservice@2.0-service \
     vendor.xiaomi.sensor.communicate@1.0_manifest
