@@ -3097,9 +3097,11 @@ PRODUCT_PACKAGES += \
     TimeService \
     pasrservice \
     TrustZoneAccessService \
+    com.qualcomm.qti.gpudrivers.taro.api32 \
     powermodule_java \
     PowerOffAlarm \
     uimgbaservice \
+    com.qualcomm.qti.gpudrivers.taro.api32 \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
